@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="card mt-4">
+              <div class="card-header">
+                Bài tập luyện mảng
+              </div>
+              <div class="card-body">
+                <div id="numb1_wrapper" class="form-group">
+                    <label for="numb_1">Nhập số</label>
+                    <input type="text" class="form-control" id="numb_1">
+                </div>
+                <div id="realNumber_wrapper" class="form-group" style="display: none">
+                    <label for="realNumb">Nhập vào số thực</label>
+                    <input type="text" class="form-control" id="realNumb">
+                </div>
+                <div class="position-change__wrapper" style="display: none">
+                    <h6 class="mt-5 mb-2">Nhập vào 2 vị trí muốn đổi giá trị</h6>
+                    <div class="row">
+                        <div class="form-group col-lg-5 mb-3">
+                            <label for="position-change_input1">Số có vị trí thứ:</label>
+                            <input type="text" class="form-control" id="position-change_input1">
+                        </div>
+                        <div class="form-group col-lg-5 ml-3 mb-3">
+                            <label for="position-change_input2">Số có vị trí thứ:</label>
+                            <input type="text" class="form-control" id="position-change_input2">
+                        </div>
+                    </div>
+                    <button id="changePositionBtn" class="btn btn-info">Đổi vị trí</button>
+                </div>
+                <div class="mt-5">
+                    <div class="row">
+                        <div id="addBtn" class="btn btn-warning ml-3 mb-3">Thêm số</div>
+                        <div id="addRealBtn" class="btn btn-warning ml-3 mb-3">Thêm số thực</div>
+                        <div id="findIntergerBtn" class="btn btn-info ml-3 mb-3" style="display: none">Đếm các số nguyên</div>
+                        <div id="compareQuantiBtn" class="btn btn-warning ml-3 mb-3" style="display: none">So sánh số lương số dương và âm</div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="row">
+                            <div id="sumBtn" class="btn btn-warning col-lg-5 ml-3 mb-3">Tính tổng các số dương</div>
+                            <div id="countPositiveBtn" class="btn btn-info col-lg-6 ml-3 mb-3">Đếm các số dương</div>
+                        </div>
+                        <div class="row">
+                            <div id="findSmallPosiBtn" class="btn btn-warning col-lg-5 ml-3 mb-3">Tìm số dương nhỏ nhất</div>
+                            <div id="findSmallPosiBtn" class="btn btn-info col-lg-6 ml-3 mb-3">So sánh số lượng số dương và âm</div>
+                        </div>
+                        <div class="row">
+                            <div id="findSmallestBtn" class="btn btn-warning col-lg-5 ml-3 mb-3">Tìm số nhỏ nhất</div>
+                            <div id="findLastEvenBtn" class="btn btn-info col-lg-6 ml-3 mb-3">Tìm số chẵn cuối cùng</div>
+                        </div>
+                        <div class="row">
+                            <div id="positionDisplayBtn" class="btn btn-warning col-lg-5 ml-3 mb-3">Đổi vị trí 2 giá trị</div>
+                            <div id="arrangeBtn" class="btn btn-info col-lg-6 ml-3 mb-3">Sắp xếp theo thứ tự tăng dần</div>
+                        </div>
+                        <div class="row">
+                            <div id="primeFindBtn" class="btn btn-warning col-lg-6 ml-3 mb-3">Tìm số nguyên tố đầu tiên</div>
+                            <div id="realNumberBtn" class="btn btn-info col-lg-5 ml-3 mb-3">Xử lý mảng số thực</div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div id="inforDisplay" class="card-footer text-muted">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
