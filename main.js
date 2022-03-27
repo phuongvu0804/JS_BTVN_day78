@@ -116,6 +116,8 @@ document.getElementById("findLastEvenBtn").onclick = function () {
     if (checkedElement % 2 === 0) {
       result = checkedElement;
       break;
+    } else {
+      result = -1;
     }
   }
 
@@ -151,7 +153,7 @@ document.getElementById("changePositionBtn").onclick = function () {
 
 //7. Sắp xếp mảng theo thứ tự tăng dần
 document.getElementById('arrangeBtn').onclick = function() {
-  var positionAfter;
+  var a;
   var originalLength = originalArray.length;
   for (var i = 0; i < originalLength - 1; i++) {
     var element1 = originalArray[i];
@@ -160,21 +162,16 @@ document.getElementById('arrangeBtn').onclick = function() {
     for (var j = i + 1; j < originalLength; j++) {
       var element2= originalArray[j];
       if(originalArray[i] > originalArray[j]) {
-        positionAfter = originalArray[i];
+        a = originalArray[i];
         originalArray[i] = originalArray[j];
-        originalArray[j] = originalArray[i]; 
+        originalArray[j] = a; 
         console.log(`lần j ${j} mảng mới ${originalArray}, phần tử cuối ${element1}`)
 
       }
     }
-    
-    console.log(`lần i ${i} mảng mới ${originalArray}, phần tử cuối ${element1}`)
   }
 
-
-  console.log(newArray);
-
-  var noti_arrange  = '<div>Mảng mới được tạo là: '+ originalArray + ' .</div>';
+  var noti_arrange  = '<div>Mảng mới được tạo (theo tứ tự tăng dần) là: '+ originalArray + ' .</div>';
   document.getElementById('inforDisplay').innerHTML = noti_arrange;
 }
 
@@ -185,7 +182,9 @@ document.getElementById("primeFindBtn").onclick = function () {
   for (var i = 0; i < originalArray.length; i++) {
     var element = originalArray[i];
 
-    if (element === 1) {
+    if (element < 2) {
+      element = -1;
+      console.log(element);
       continue;
     } else {
       result = primeCheck(element);
@@ -193,6 +192,9 @@ document.getElementById("primeFindBtn").onclick = function () {
 
     if (result) {
       break;
+    } else {
+      console.log(element);
+      element = -1;
     }
   }
 
